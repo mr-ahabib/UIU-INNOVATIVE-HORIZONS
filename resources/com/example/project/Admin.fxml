@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #154B63;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.Admin">
+   <children>
+      <AnchorPane prefHeight="64.0" prefWidth="800.0" style="-fx-background-color: #154B63;">
+         <children>
+            <Label layoutX="327.0" layoutY="13.0" text="Admin Panel" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Button fx:id="back" layoutX="695.0" layoutY="19.0" mnemonicParsing="false" onAction="#backB" style="-fx-background-color: #fffefc;" text="DashBoard" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="6.0" layoutY="127.0" text="Name:" textFill="WHITE" />
+      <Label layoutX="6.0" layoutY="163.0" text="ID:" textFill="WHITE" />
+      <Label layoutX="6.0" layoutY="197.0" text="Email:" textFill="WHITE" />
+      <Label layoutX="6.0" layoutY="235.0" text="CGPA:" textFill="WHITE" />
+      <Label layoutX="6.0" layoutY="272.0" text="Batch:" textFill="WHITE" />
+      <Label layoutX="6.0" layoutY="307.0" text="Phone:" textFill="WHITE" />
+      <Label layoutX="6.0" layoutY="341.0" text="DEPT:" textFill="WHITE" />
+      <Label layoutX="6.0" layoutY="376.0" text="Password:" textFill="WHITE" />
+      <Button fx:id="st" layoutX="125.0" layoutY="417.0" mnemonicParsing="false" onAction="#student" style="-fx-background-color: #fffefc;" text="Submit" />
+      <Label layoutX="471.0" layoutY="131.0" text="Name:" textFill="WHITE" />
+      <Label layoutX="471.0" layoutY="180.0" text="Email:" textFill="WHITE" />
+      <Label layoutX="471.0" layoutY="232.0" text="Room:" textFill="WHITE" />
+      <Label layoutX="471.0" layoutY="275.0" text="DEPT:" textFill="WHITE" />
+      <Label layoutX="471.0" layoutY="317.0" text="Password:" textFill="WHITE" />
+      <Label layoutX="471.0" layoutY="357.0" text="FYDP:" textFill="WHITE" />
+      <Button fx:id="tr" layoutX="639.0" layoutY="404.0" mnemonicParsing="false" onAction="#teacher" style="-fx-background-color: #fffefc;" text="Submit" />
+      <TextField fx:id="sname" layoutX="77.0" layoutY="123.0" prefHeight="26.0" prefWidth="279.0" />
+      <TextField fx:id="sid" layoutX="77.0" layoutY="159.0" prefHeight="26.0" prefWidth="279.0" />
+      <TextField fx:id="semail" layoutX="77.0" layoutY="193.0" prefHeight="26.0" prefWidth="279.0" />
+      <TextField fx:id="cgpa" layoutX="77.0" layoutY="230.0" prefHeight="26.0" prefWidth="279.0" />
+      <TextField fx:id="batch" layoutX="77.0" layoutY="268.0" prefHeight="26.0" prefWidth="279.0" />
+      <TextField fx:id="sphone" layoutX="77.0" layoutY="303.0" prefHeight="26.0" prefWidth="279.0" />
+      <TextField fx:id="sdept" layoutX="77.0" layoutY="337.0" prefHeight="26.0" prefWidth="279.0" />
+      <TextField fx:id="tname" layoutX="542.0" layoutY="127.0" prefHeight="26.0" prefWidth="247.0" />
+      <TextField fx:id="temail" layoutX="542.0" layoutY="176.0" prefHeight="26.0" prefWidth="247.0" />
+      <TextField fx:id="tphone" layoutX="542.0" layoutY="228.0" prefHeight="26.0" prefWidth="247.0" />
+      <TextField fx:id="tdept" layoutX="542.0" layoutY="270.0" prefHeight="26.0" prefWidth="247.0" />
+      <TextField fx:id="fydp" layoutX="542.0" layoutY="353.0" prefHeight="26.0" prefWidth="247.0" />
+      <PasswordField fx:id="spass" layoutX="78.0" layoutY="372.0" prefHeight="26.0" prefWidth="279.0" />
+      <PasswordField fx:id="tpass" layoutX="542.0" layoutY="311.0" prefHeight="26.0" prefWidth="247.0" />
+      <Label layoutX="71.0" layoutY="80.0" text="Student Form" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="542.0" layoutY="80.0" text="Teacher Form" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

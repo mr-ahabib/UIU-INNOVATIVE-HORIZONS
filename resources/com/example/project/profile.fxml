@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #f68b1f;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.profile">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0">
+         <image>
+            <Image url="@../../../../../../../../Downloads/uiu3.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="600.0" fitWidth="900.0" layoutX="-29.0">
+         <image>
+            <Image url="@bg%20fr1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="251.0" layoutY="175.0" text="Email:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="251.0" layoutY="226.0" text="FYDP:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="249.0" layoutY="276.0" text="Status:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="249.0" layoutY="331.0" text="Day:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="236.0" layoutY="73.0" text="MENTOR REQUEST" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="sname" editable="false" layoutX="649.0" layoutY="162.0" prefHeight="26.0" prefWidth="194.0" />
+      <TextField fx:id="id" editable="false" layoutX="649.0" layoutY="214.0" prefHeight="26.0" prefWidth="194.0" />
+      <TextField fx:id="email" editable="false" layoutX="650.0" layoutY="266.0" prefHeight="26.0" prefWidth="194.0" />
+      <TextField fx:id="phone" editable="false" layoutX="650.0" layoutY="319.0" prefHeight="26.0" prefWidth="193.0" />
+      <Text fill="WHITE" layoutX="591.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="604.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="590.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Label fx:id="de" layoutX="313.0" layoutY="176.0" text="Label" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="fp" layoutX="313.0" layoutY="227.0" text="Label" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="st" layoutX="319.0" layoutY="278.0" text="Label" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="na" layoutX="298.0" layoutY="334.0" text="Label" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="24.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon/home%20(4).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="24.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon/svg.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="mbt" layoutX="70.0" layoutY="148.0" mnemonicParsing="false" onAction="#MentorsBT" opacity="0.84" prefHeight="26.0" prefWidth="111.0" style="-fx-background-color: #42abc9;" text="Mentors" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="70.0" layoutY="84.0" mnemonicParsing="false" opacity="0.84" prefHeight="26.0" prefWidth="111.0" style="-fx-background-color: #42abc9;" text="Home" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="24.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon/youth.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="GroupB" layoutX="70.0" layoutY="217.0" mnemonicParsing="false" onAction="#GroupBT" opacity="0.84" prefHeight="26.0" prefWidth="111.0" style="-fx-background-color: #42abc9;" text="Groups" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="24.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon/people.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="createGroupBT" layoutX="70.0" layoutY="289.0" mnemonicParsing="false" onAction="#cGroupBt" opacity="0.84" prefHeight="26.0" prefWidth="111.0" style="-fx-background-color: #42abc9;" text="Create Groups" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="24.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon/team.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="reqB" layoutX="70.0" layoutY="352.0" mnemonicParsing="false" onAction="#reqBT" opacity="0.84" prefHeight="26.0" prefWidth="111.0" style="-fx-background-color: #42abc9;" text="Members" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="24.0" layoutY="419.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon/patient.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="requB" layoutX="70.0" layoutY="422.0" mnemonicParsing="false" onAction="#requBT" opacity="0.84" prefHeight="26.0" prefWidth="111.0" style="-fx-background-color: #42abc9;" text="Requests" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="24.0" layoutY="485.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon/profile.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="mfB" layoutX="70.0" layoutY="488.0" mnemonicParsing="false" onAction="#mProfileBT" opacity="0.84" prefHeight="26.0" prefWidth="111.0" style="-fx-background-color: #42abc9;" text="My Profile" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="592.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="67.0" fitWidth="64.0" layoutX="18.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b" fitHeight="82.0" fitWidth="78.0" layoutX="748.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon/D22.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="a" fitHeight="82.0" fitWidth="83.0" layoutX="709.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon/D11.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="logout" layoutX="71.0" layoutY="540.0" mnemonicParsing="false" onAction="#logoutBT" prefHeight="26.0" prefWidth="111.0" style="-fx-background-color: #FFC107;" text="Log Out" />
+      <ImageView fitHeight="30.0" fitWidth="33.0" layoutX="24.0" layoutY="538.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon/check-out.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

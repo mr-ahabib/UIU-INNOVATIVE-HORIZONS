@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #f68b1f;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.BookController">
+    <children>
+        <ImageView fitHeight="400.0" fitWidth="600.0">
+            <image>
+                <Image url="@../../../../../../../../Downloads/uiu3.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="600.0" fitWidth="900.0">
+            <image>
+                <Image url="@bg%20fr1.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="272.0" layoutY="129.0" text="Name:" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="271.0" layoutY="197.0" text="Email:" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="275.0" layoutY="88.0" text="Mentor Details" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="tname" editable="false" layoutX="359.0" layoutY="134.0" prefHeight="26.0" prefWidth="200.0" />
+        <TextField fx:id="temail" editable="false" layoutX="359.0" layoutY="198.0" prefHeight="26.0" prefWidth="200.0" />
+        <TextField fx:id="room" editable="false" layoutX="359.0" layoutY="261.0" prefHeight="26.0" prefWidth="200.0" />
+      <Label layoutX="270.0" layoutY="315.0" text="Dept:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="270.0" layoutY="258.0" text="Room:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tdept" editable="false" layoutX="359.0" layoutY="320.0" prefHeight="26.0" prefWidth="200.0" />
+      <TableView fx:id="counselling" layoutX="582.0" layoutY="131.0" prefHeight="218.0" prefWidth="310.0">
+        <columns>
+          <TableColumn fx:id="day" prefWidth="110.0" text="Day" />
+          <TableColumn fx:id="Start" prefWidth="86.0" text="Start" />
+            <TableColumn fx:id="End" prefWidth="86.66668701171875" text="End" />
+        </columns>
+      </TableView>
+      <Label layoutX="582.0" layoutY="92.0" text="Schedules" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="195.0" layoutY="296.0" prefHeight="104.0" prefWidth="200.0" />
+      <Button fx:id="confirm" layoutX="700.0" layoutY="370.0" mnemonicParsing="false" onAction="#confirmBT" opacity="0.8" text="Select">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button layoutX="110.0" layoutY="157.0" mnemonicParsing="false" opacity="0.84" prefHeight="26.0" prefWidth="111.0" style="-fx-background-color: #006683;" text="Mentors" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="GroupB" layoutX="110.0" layoutY="219.0" mnemonicParsing="false" onAction="#GroupBT" opacity="0.84" prefHeight="26.0" prefWidth="111.0" style="-fx-background-color: #006683;" text="Groups" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="createGroupBT" layoutX="110.0" layoutY="280.0" mnemonicParsing="false" onAction="#CgroupBt" opacity="0.84" prefHeight="26.0" prefWidth="111.0" style="-fx-background-color: #006683;" text="Create Group" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="HomeB" layoutX="110.0" layoutY="94.0" mnemonicParsing="false" onAction="#homeBT" prefHeight="26.0" prefWidth="111.0" style="-fx-background-color: #006683;" text="Home" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="110.0" layoutY="342.0" mnemonicParsing="false" opacity="0.84" prefHeight="26.0" prefWidth="111.0" style="-fx-background-color: #006683;" text="Members" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="110.0" layoutY="406.0" mnemonicParsing="false" opacity="0.84" prefHeight="26.0" prefWidth="111.0" style="-fx-background-color: #006683;" text="Requests" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="110.0" layoutY="462.0" mnemonicParsing="false" opacity="0.84" prefHeight="26.0" prefWidth="111.0" style="-fx-background-color: #006683;" text="My Profile" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="36.0" fitWidth="38.0" layoutX="54.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon/home%20(4).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="36.0" fitWidth="38.0" layoutX="50.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon/svg.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="36.0" fitWidth="38.0" layoutX="50.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon/youth.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="36.0" fitWidth="38.0" layoutX="49.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon/people.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="36.0" fitWidth="38.0" layoutX="49.0" layoutY="339.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon/team.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="36.0" fitWidth="38.0" layoutX="54.0" layoutY="403.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon/patient.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="36.0" fitWidth="38.0" layoutX="54.0" layoutY="459.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon/profile.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="scholarB" layoutX="359.0" layoutY="465.0" mnemonicParsing="false" onAction="#scholarBT" text="Click to see Scholar profile" />
+      <ImageView fitHeight="67.0" fitWidth="64.0" layoutX="28.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="b" fitHeight="82.0" fitWidth="78.0" layoutX="793.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon/D22.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="a" fitHeight="82.0" fitWidth="83.0" layoutX="754.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon/D11.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
